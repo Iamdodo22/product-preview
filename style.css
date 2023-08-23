@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container---head{
+    /* padding-top: 2rem; */
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product{
+    width: 100%;
+    height: 100%;
+}
+.items{
+    width: 50%;
+    /* height: 100%; */
+}
+.first---container{
+    border-radius: 6px 0 0 6px;
+    /* border-color: hsla(212, 21%, 14%, 0.247); */
+}
+.second---container{
+    border-radius: 0 6px 6px 0;
+    border-color: white;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    /* gap: 1rem; */
+}
+.second---container h1{
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+.second---container .floral{
+    font-size: 21px;
+    color: hsl(228, 12%, 48%);
+}
+.second---container h2{
+    font-size: 39px;
+    line-height: 0.8;
+}
+strong{
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+}
+.dollar{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.dol99{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    border-color: hsl(158, 36%, 37%);
+    border-radius: 6px;
+    padding: .5rem 0;
+}
+.cart{
+    text-decoration: none;
+    color: white;
+}
