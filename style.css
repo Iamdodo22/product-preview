@@ -93,6 +93,7 @@ main{
     .product{
         height: 15rem;
         object-fit: cover;
+        border-radius: 6px 6px 0 0;
     }
 }
 @media (max-width:490px) {
