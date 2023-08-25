@@ -17,53 +17,117 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 .container---head{
-    /* padding-top: 2rem; */
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
-.product{
-    width: 100%;
-    height: 100%;
+@media (max-width:980px) {
+    .container---head{
+        width: 55%;
+    }
+}
+@media (max-width:880px) {
+    .container---head{
+        width: 65%;
+    }
+}
+@media (max-width:780px) {
+    .container---head{
+        width: 70%;
+    }
+}
+@media (max-width:700px) {
+    .container---head{
+        width: 75%;
+    }
+}
+@media (max-width:650px) {
+    .container---head{
+        width: 90%;
+    }
+}
+@media (max-width:570px) {
+    .container---head{
+        width: 100%;
+    }
+}
+@media (max-width:490px) {
+    .container---head{
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem;
+    }
+}
+@media (max-width:375px) {
+    .container---head{
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem;
+    }
 }
 .items{
     width: 50%;
-    /* height: 100%; */
+    height: 100%;
 }
-.first---container{
+@media (max-width:375px) {
+    .items{
+        width: 100%;
+    }
+}
+@media (max-width:490px) {
+    .items{
+        width: 100%;
+    }
+}
+.product{
     border-radius: 6px 0 0 6px;
-    /* border-color: hsla(212, 21%, 14%, 0.247); */
+}
+@media (max-width:375px) {
+    .product{
+        height: 15rem;
+        object-fit: cover;
+    }
+}
+@media (max-width:490px) {
+    .product{
+        height: 15rem;
+        object-fit: cover;
+    }
 }
 .second---container{
     border-radius: 0 6px 6px 0;
     border-color: white;
-    height: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    /* gap: 1rem; */
 }
 .second---container h1{
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 5px;
     color: hsl(228, 12%, 48%);
 }
 .second---container .floral{
-    font-size: 21px;
+    font-size: 14px;
     color: hsl(228, 12%, 48%);
 }
 .second---container h2{
-    font-size: 39px;
+    font-size: 33px;
     line-height: 0.8;
+    font-family: 'Fraunces', serif;
 }
 strong{
     font-size: 40px;
     color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
 }
 .dollar{
     display: flex;
@@ -79,8 +143,9 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1rem;
     background-color: hsl(158, 36%, 37%);
-    border-color: hsl(158, 36%, 37%);
+    border: none;
     border-radius: 6px;
     padding: .5rem 0;
 }
@@ -88,3 +153,4 @@ button{
     text-decoration: none;
     color: white;
 }
+
